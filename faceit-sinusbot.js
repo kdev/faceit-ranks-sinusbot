@@ -41,9 +41,9 @@ const configurationOptions = [
 
 registerPlugin(
     {
-        name: 'Faceit Ranking Script',
+        name: 'Faceit Rank Script',
         version: '1.0',
-        description: 'This example actually does nothing',
+        description: 'Add Faceit ranks as roles to users',
         author: 'Konstantin <konstantinw@ledbrain.de>',
         vars: configurationOptions,
         autorun: false,
@@ -118,7 +118,6 @@ registerPlugin(
             const users = store.getAll();
             const entries = Object.entries(users);
 
-            //engine.log(JSON.stringify(config.serverGroupToSet));
             if (config.serverGroupToSet.length !== 10) {
                 engine.log('❌ Error: Please enter 10 Faceit Rank groups!');
             }
