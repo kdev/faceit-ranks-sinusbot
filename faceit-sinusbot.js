@@ -1,3 +1,7 @@
+/**
+ * @author kdev <konstantinw@ledbrain.de>
+ * @license  BSD-3-Clause
+ */
 const configurationOptions = [
     {
         name: 'faceitKey',
